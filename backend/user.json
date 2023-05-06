@@ -2,7 +2,7 @@
   "_id": {
     "$oid": "621fe1f527d68ebb24438395"
   },
-  "professionalName": "Nathan Birch",
+  "contactsName": "Nathan Birch",
   "nameLink": {
     "firstName": "Nathan",
     "url": "https://nathanbirch.netlify.app/"

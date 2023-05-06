@@ -6,12 +6,12 @@ async function apiFetch(url) {
 }
 
 const getData = async () => {
-  const data = await apiFetch('http://localhost:8080/professional');
+  const data = await apiFetch('http://localhost:8080/contacts');
   displayAllData(data);
 };
 
 function displayAllData(data) {
-  displayProfessionalName(data.professionalName);
+  displayContactsName(data.contactsName);
   displayImage(data.base64Image);
   displayPrimaryDescription(data);
   displayWorkDescription(data);
@@ -20,13 +20,13 @@ function displayAllData(data) {
   displayGitHubLink(data);
 }
 
-function displayProfessionalName(n) {
-  let professionalName = document.getElementById('professionalName');
-  professionalName.innerHTML = n;
+function displayContactsName(n) {
+  let contactsName = document.getElementById('contactsName');
+  contactsName.innerHTML = n;
 }
 
 function displayImage(img) {
-  let image = document.getElementById('professionalImage');
+  let image = document.getElementById('contactsImage');
   image.src = `data:image/png;base64, ${img}`;
 }
 function displayPrimaryDescription(data) {
