@@ -6,4 +6,40 @@ GET http://localhost:8080/contacts/644dda4bdaa8dd43d6e9ee59
 GET http://localhost:8080/contacts/644dda99daa8dd43d6e9ee5a
 ###
 GET http://localhost:8080/contacts/644ddab2daa8dd43d6e9ee5b
+###
+POST http://localhost:8080/contacts HTTP/1.1
+Content-Type: application/json
 
+{
+    "firstName":"Camden",
+    "lastName":"Miller",
+    "email":"Cmiller01@gmail.com",
+    "favoriteColor":"Orange",
+    "birthday":"04/20"
+}
+###
+GET https://cse341-miller.onrender.com/contacts
+###
+GET https://cse341-miller.onrender.com/localhost:8080/contacts/644dda4bdaa8dd43d6e9ee59
+###
+POST https://cse341-miller.onrender.com/contacts HTTP/1.1
+Content-Type: application/json
+{
+    "firstName":"Camden",
+    "lastName":"Miller",
+    "email":"Cmiller01@gmail.com",
+    "favoriteColor":"Orange",
+    "birthday":"04/20"
+}
+###
+PUT https://cse341-miller.onrender.com/contacts HTTP/1.1
+Content-Type: application/json
+{
+    "firstName":"Camden",
+    "lastName":"Miller",
+    "email":"Cmiller01@gmail.com",
+    "favoriteColor":"Blue",
+    "birthday":"04/21"
+}
+###
+DELETE  https://cse341-miller.onrender.com/contacts/644dda4bdaa8dd43d6e9ee59
