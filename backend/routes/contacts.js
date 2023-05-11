@@ -13,7 +13,7 @@ router.post('/', contactsController.createContact);
 
 router.put('/:id', contactsController.updateContact);
 
-router.delete('/', contactsController.getAll);
+router.delete('/:id', contactsController.deleteContact);
 
 // localhost:8080/contacts/
 module.exports = router;

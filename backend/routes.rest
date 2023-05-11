@@ -18,12 +18,26 @@ Content-Type: application/json
     "birthday":"04/20"
 }
 ###
+PUT http://localhost:8080/contacts/645d291456fe2c83d45414dc HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName":"Camden",
+    "lastName":"Miller",
+    "email":"Cmiller01@gmail.com",
+    "favoriteColor":"Blue",
+    "birthday":"04/21"
+}
+###
+DELETE http://localhost:8080/contacts/644ddab2daa8dd43d6e9ee5b HTTP/1.1
+###
 GET https://cse341-miller.onrender.com/contacts
 ###
 GET https://cse341-miller.onrender.com/localhost:8080/contacts/644dda4bdaa8dd43d6e9ee59
 ###
 POST https://cse341-miller.onrender.com/contacts HTTP/1.1
 Content-Type: application/json
+
 {
     "firstName":"Camden",
     "lastName":"Miller",
@@ -32,8 +46,10 @@ Content-Type: application/json
     "birthday":"04/20"
 }
 ###
+
 PUT https://cse341-miller.onrender.com/contacts HTTP/1.1
 Content-Type: application/json
+
 {
     "firstName":"Camden",
     "lastName":"Miller",
